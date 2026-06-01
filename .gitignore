@@ -1,0 +1,14 @@
+# Documentation
+docs/
+# Logs and Benchmarks
+*.log
+*_results.txt
+
+# Binaries
+atlas-bench
+atlas-proxy
+static-bench
+
+# Environment
+.env
+tst01.sh
