@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  atlas-proxy:
+    build: .
+    container_name: atlas-proxy
+    ports:
+      - "1080:1080"
+    restart: unless-stopped
+    # Mount local directory if you want to persist the generated certificates
+    # volumes:
+    #   - ./:/app
+
+  # Optional service to run the benchmark suite easily
+  # Run via: docker compose --profile test up atlas-bench
+  atlas-bench:
+    build: .
+    container_name: atlas-bench
+    command: ["/bin/atlas-bench", "-n", "500", "-l", "20"]
+    profiles:
+      - test
+
+  ablation-bench:
+    build: .
+    container_name: ablation-bench
+    command: ["/bin/ablation-bench"]
+    profiles:
+      - test
