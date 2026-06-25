@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it using the following metadata."
+title: "ATLAS - Adaptive Transport Layer Anonymization System"
+abstract: "An adaptive TLS fingerprint camouflage system that dynamically mutates TLS ClientHello characteristics to evade DPI classification."
+type: software
+authors:
+  - family-names: "Pramanik"
+    given-names: "Arpan"
+    affiliation: "SRM University - AP"
+  - family-names: "Sravan"
+    given-names: "SS"
+    affiliation: "SRM University - AP"
+    name-particle: "Dr."
+    name-suffix: "Associate Prof."
+repository-code: "https://github.com/arpan-pramanik/ATLAS"
+version: 1.0.0
+doi: 10.5281/zenodo.20836805
+date-released: 2026-06-25
+license: MIT
+keywords:
+  - privacy
+  - tls
+  - censorship-circumvention
+  - fingerprinting
+  - ja3
+  - ja4
+  - network-security
